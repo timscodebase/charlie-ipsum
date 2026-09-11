@@ -39,11 +39,21 @@ export default function manifest(): MetadataRoute.Manifest {
         type: "image/png",
         purpose: "maskable",
       },
+    ],
+    screenshots: [
       {
-        src: "/icon.svg",
-        sizes: "any",
-        type: "image/svg+xml",
-        purpose: "any",
+        src: "/screenshot-wide.png",
+        sizes: "1280x720",
+        type: "image/png",
+        form_factor: "wide",
+        label: "Charlie Ipsum on Desktop - Discourse Controls and Transcript",
+      },
+      {
+        src: "/screenshot-narrow.png",
+        sizes: "750x1334",
+        type: "image/png",
+        form_factor: "narrow",
+        label: "Charlie Ipsum on Mobile - Fast Debate Rhetoric Generation",
       },
     ],
     shortcuts: [
