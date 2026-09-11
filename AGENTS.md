@@ -2,7 +2,7 @@
 
 ## 1. Project Overview & Objectives
 
-Build and deploy **Kirk Ipsum**, an interactive, responsive Lorem Ipsum text generator dedicated to the rhetorical themes of Charlie Kirk and Turning Point USA (TPUSA). The tool allows developers, designers, and organizers to generate debate-ready placeholder copy across four distinct rhetorical lenses: Campus Debate, Constitutional Republicanism, Free-Market Economics, and TPUSA Rally speeches.
+Build and deploy **Charlie Ipsum**, an interactive, responsive Lorem Ipsum text generator dedicated to the rhetorical themes of Charlie Kirk and Turning Point USA (TPUSA). The tool allows developers, designers, and organizers to generate debate-ready placeholder copy across four distinct rhetorical lenses: Campus Debate, Constitutional Republicanism, Free-Market Economics, and TPUSA Rally speeches.
 
 The project must be initialized with the exact preset specified:
 `pnpm dlx shadcn@latest init --preset bKsFBxgG --template next`
@@ -36,7 +36,7 @@ kirk-ipsum/
 │   ├── app/
 │   │   ├── globals.css          # Color tokens, base CSS, reset rules
 │   │   ├── layout.tsx           # Root HTML, dark class, typography font loading
-│   │   └── page.tsx             # Interactive Kirk Ipsum client UI & generator logic
+│   │   └── page.tsx             # Interactive Charlie Ipsum client UI & generator logic
 │   ├── components/
 │   │   └── ui/                  # Shadcn UI primitives (button, card, slider, badge, etc.)
 │   └── lib/
@@ -109,7 +109,7 @@ Features:
 Must include:
 
 1. **Header Bar**:
-   - Branding icon + title (`KIRK IPSUM`).
+   - Branding icon + title (`Charlie Ipsum`).
    - Quick-action Copy button with visual feedback and confetti trigger.
 2. **Left Control Rail**:
    - **Format Selector**: Segmented toggles for Paragraphs, Sentences, Bullets.
@@ -337,7 +337,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kirk Ipsum | The Conservative Lorem Ipsum Generator",
+  title: "Charlie Ipsum | The Conservative Lorem Ipsum Generator",
   description:
     "Generate bold, debate-ready placeholder text steeped in free enterprise and constitutional principles.",
 };

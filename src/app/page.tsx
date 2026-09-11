@@ -107,7 +107,7 @@ export default function KirkIpsumApp() {
             </div>
             <div>
               <span className="font-bold text-lg tracking-tight text-white flex items-center gap-1.5">
-                KIRK <span className="text-rose-500">IPSUM</span>
+                CHARLIE <span className="text-rose-500">IPSUM</span>
               </span>
               <span className="text-xs text-neutral-400 hidden sm:inline-block ml-2 border-l border-neutral-700 pl-2">
                 Turning Point Generator
@@ -199,9 +199,7 @@ export default function KirkIpsumApp() {
             {/* Quantity Slider */}
             <div className="space-y-3">
               <div className="flex justify-between items-center text-xs">
-                <label className="font-medium text-neutral-300">
-                  Count ({type})
-                </label>
+                <label className="font-medium text-neutral-300">Count ({type})</label>
                 <span className="font-mono bg-neutral-800 px-2 py-0.5 rounded text-neutral-200 font-semibold">
                   {count}
                 </span>
@@ -219,9 +217,7 @@ export default function KirkIpsumApp() {
             {/* Catchphrase toggle */}
             <div className="pt-2 border-t border-neutral-800">
               <label className="flex items-center justify-between cursor-pointer">
-                <span className="text-xs text-neutral-300">
-                  Lead with Signature Hook
-                </span>
+                <span className="text-xs text-neutral-300">Lead with Signature Hook</span>
                 <input
                   type="checkbox"
                   checked={startWithCatchphrase}
@@ -287,15 +283,16 @@ export default function KirkIpsumApp() {
                 {generatedOutput.map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <span className="text-rose-500 select-none mt-1 font-sans">▪</span>
-                    <span className="font-sans text-neutral-200 text-sm leading-6">
-                      {item}
-                    </span>
+                    <span className="font-sans text-neutral-200 text-sm leading-6">{item}</span>
                   </li>
                 ))}
               </ul>
             ) : (
               generatedOutput.map((paragraph, idx) => (
-                <p key={idx} className="first-letter:text-2xl first-letter:font-bold first-letter:text-rose-500">
+                <p
+                  key={idx}
+                  className="first-letter:text-2xl first-letter:font-bold first-letter:text-rose-500"
+                >
                   {paragraph}
                 </p>
               ))
