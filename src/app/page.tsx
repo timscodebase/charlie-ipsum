@@ -403,7 +403,7 @@ export default function CharlieIpsumApp() {
           </div>
 
           {/* Archival Reading Card */}
-          <div className="relative flex-1 rounded-2xl border border-slate-800/90 bg-gradient-to-b from-[#091024]/90 via-[#070d1d]/90 to-[#050814]/95 backdrop-blur-xl p-8 overflow-y-auto min-h-[460px] max-h-[720px] shadow-2xl space-y-5 select-text">
+          <div className="relative flex-1 rounded-2xl border border-slate-800/90 bg-gradient-to-b from-[#091024]/90 via-[#070d1d]/90 to-[#050814]/95 backdrop-blur-xl p-8 overflow-y-auto min-h-[460px] max-h-[720px] shadow-2xl space-y-5 select-text custom-scrollbar">
             {/* Subtle Tricolor Watermark Corner Indicator */}
             <div className="absolute top-3 right-4 flex items-center gap-1 opacity-50 select-none pointer-events-none">
               <span className="w-1.5 h-1.5 rounded-full bg-red-500" />

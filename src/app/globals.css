@@ -75,28 +75,41 @@ body {
   --scroll-radius: 6px;
 }
 
-*::-webkit-scrollbar,
-::-webkit-scrollbar {
-  width: var(--scroll-width);
-  height: var(--scroll-width);
+/* Global and nested container scrollbars for Blink/WebKit */
+::-webkit-scrollbar,
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+div::-webkit-scrollbar,
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px !important;
+  height: 10px !important;
 }
 
-*::-webkit-scrollbar-track,
-::-webkit-scrollbar-track {
-  background: var(--scroll-track);
-  border-left: 1px solid #333333;
+::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+div::-webkit-scrollbar-track,
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #181c24 !important;
+  border-left: 1px solid #333333 !important;
 }
 
-*::-webkit-scrollbar-thumb,
-::-webkit-scrollbar-thumb {
-  background: var(--scroll-thumb);
-  border-radius: var(--scroll-radius);
-  border: 1px solid rgba(0, 0, 0, 0.25);
+::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+div::-webkit-scrollbar-thumb,
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ef4444 0%, #ffffff 50%, #2563eb 100%) !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(0, 0, 0, 0.4) !important;
 }
 
-*::-webkit-scrollbar-thumb:hover,
-::-webkit-scrollbar-thumb:hover {
-  filter: brightness(1.2);
+::-webkit-scrollbar-thumb:hover,
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+div::-webkit-scrollbar-thumb:hover,
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #f87171 0%, #ffffff 50%, #3b82f6 100%) !important;
 }
 
 /* Subtle Patriotic Aura & Shimmer */
