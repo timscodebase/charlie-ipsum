@@ -423,7 +423,7 @@ export default function CharlieIpsumApp() {
               generatedOutput.map((paragraph, idx) => (
                 <p
                   key={idx}
-                  className="font-serif text-slate-200 leading-relaxed text-base tracking-normal first-letter:text-2xl first-letter:font-bold first-letter:text-red-400 first-letter:mr-0.5"
+                  className="font-serif text-slate-200 leading-relaxed text-base tracking-normal"
                 >
                   {paragraph}
                 </p>
