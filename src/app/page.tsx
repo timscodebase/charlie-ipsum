@@ -127,7 +127,7 @@ export default function CharlieIpsumApp() {
   };
 
   return (
-    <div className="relative flex flex-col min-h-screen bg-[#060a14] text-slate-100 overflow-hidden selection:bg-red-600 selection:text-white">
+    <div className="relative flex flex-col min-h-screen bg-[#060a14] text-slate-100 overflow-hidden">
       {/* Ambient Patriotic Radial Lighting */}
       <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
         {/* Top-Left Cobalt Freedom Glow */}
@@ -423,7 +423,7 @@ export default function CharlieIpsumApp() {
               generatedOutput.map((paragraph, idx) => (
                 <p
                   key={idx}
-                  className="font-serif text-slate-200 leading-relaxed text-base tracking-normal first-letter:text-3xl first-letter:font-bold first-letter:text-red-500 first-letter:float-left first-letter:mr-2 first-letter:leading-none"
+                  className="font-serif text-slate-200 leading-relaxed text-base tracking-normal first-letter:text-2xl first-letter:font-bold first-letter:text-red-400 first-letter:mr-0.5"
                 >
                   {paragraph}
                 </p>

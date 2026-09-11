@@ -57,6 +57,16 @@ body {
   overflow-x: hidden;
 }
 
+/* Refined Patriotic Selection: Smooth translucent cobalt with crisp white text */
+::selection {
+  background-color: rgba(37, 99, 235, 0.45);
+  color: #ffffff;
+}
+::-moz-selection {
+  background-color: rgba(37, 99, 235, 0.45);
+  color: #ffffff;
+}
+
 /* Custom Patriotic Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
