@@ -68,19 +68,35 @@ body {
 }
 
 /* Custom Patriotic Scrollbar */
+:root {
+  --scroll-width: 10px;
+  --scroll-track: #181c24;
+  --scroll-thumb: linear-gradient(180deg, #dc2626 0%, #ffffff 50%, #2563eb 100%);
+  --scroll-radius: 6px;
+}
+
+html {
+  scrollbar-color: #dc2626 var(--scroll-track);
+}
+
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: var(--scroll-width);
+  height: var(--scroll-width);
 }
+
 ::-webkit-scrollbar-track {
-  background: rgba(10, 16, 32, 0.6);
+  background: var(--scroll-track);
+  border-left: 1px solid #333333;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: rgba(71, 85, 105, 0.4);
-  border-radius: 4px;
+  background: var(--scroll-thumb);
+  border-radius: var(--scroll-radius);
+  border: 1px solid rgba(0, 0, 0, 0.25);
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(225, 29, 72, 0.5);
+  filter: brightness(1.15);
 }
 
 /* Subtle Patriotic Aura & Shimmer */
