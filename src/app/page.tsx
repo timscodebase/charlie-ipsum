@@ -127,7 +127,7 @@ export default function CharlieIpsumApp() {
   };
 
   return (
-    <div className="relative flex flex-col min-h-screen bg-[#060a14] text-slate-100 overflow-hidden">
+    <div className="relative flex flex-col min-h-screen bg-[#060a14] text-slate-100 overflow-hidden selection:bg-red-600 selection:text-white">
       {/* Ambient Patriotic Radial Lighting */}
       <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
         {/* Top-Left Cobalt Freedom Glow */}

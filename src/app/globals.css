@@ -57,13 +57,13 @@ body {
   overflow-x: hidden;
 }
 
-/* Refined Patriotic Selection: Smooth translucent cobalt with crisp white text */
+/* Patriotic Red Selection */
 ::selection {
-  background-color: rgba(37, 99, 235, 0.45);
+  background-color: #dc2626;
   color: #ffffff;
 }
 ::-moz-selection {
-  background-color: rgba(37, 99, 235, 0.45);
+  background-color: #dc2626;
   color: #ffffff;
 }
 
