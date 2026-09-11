@@ -63,7 +63,7 @@ export default function CharlieIpsumApp() {
       await navigator.clipboard.writeText(rawText);
       setHasCopied(true);
       // Majestic patriotic confetti: vibrant ruby red, pure white, and liberty cobalt blue
-      confetti({
+      void confetti({
         particleCount: 55,
         spread: 70,
         origin: { y: 0.75 },
@@ -224,10 +224,10 @@ export default function CharlieIpsumApp() {
 
             {/* Output Format Selector */}
             <div className="space-y-2">
-              <label className="text-xs font-semibold text-slate-300 uppercase tracking-wider flex items-center justify-between">
+              <div className="text-xs font-semibold text-slate-300 uppercase tracking-wider flex items-center justify-between">
                 <span>Output Format</span>
                 <span className="text-[10px] text-slate-500 font-normal capitalize">({type})</span>
-              </label>
+              </div>
               <div className="grid grid-cols-3 gap-2 p-1 rounded-xl bg-[#060a16] border border-slate-800/80">
                 {(["paragraphs", "sentences", "bullets"] as const).map((fmt) => (
                   <button
@@ -247,9 +247,9 @@ export default function CharlieIpsumApp() {
 
             {/* Rhetorical Lens Grid */}
             <div className="space-y-2">
-              <label className="text-xs font-semibold text-slate-300 uppercase tracking-wider">
+              <div className="text-xs font-semibold text-slate-300 uppercase tracking-wider">
                 Rhetorical Lens
-              </label>
+              </div>
               <div className="grid grid-cols-2 gap-2.5">
                 {(Object.keys(toneConfig) as RhetoricTone[]).map((toneKey) => {
                   const config = toneConfig[toneKey];
@@ -280,7 +280,7 @@ export default function CharlieIpsumApp() {
             {/* Quantity Slider */}
             <div className="space-y-3 pt-1">
               <div className="flex justify-between items-center text-xs">
-                <label className="font-semibold text-slate-300 uppercase tracking-wider">
+                <label htmlFor="quantity-count" className="font-semibold text-slate-300 uppercase tracking-wider">
                   Quantity Count
                 </label>
                 <span className="font-mono bg-blue-950/80 border border-blue-700/50 px-2.5 py-0.5 rounded-md text-blue-200 font-bold text-xs shadow-inner">
@@ -289,6 +289,7 @@ export default function CharlieIpsumApp() {
               </div>
               <div className="relative">
                 <input
+                  id="quantity-count"
                   type="range"
                   min="1"
                   max={type === "paragraphs" ? 10 : 25}
@@ -306,7 +307,11 @@ export default function CharlieIpsumApp() {
 
             {/* Signature Catchphrase toggle */}
             <div className="pt-3 border-t border-slate-800/80">
-              <label className="flex items-center justify-between cursor-pointer group">
+              <label
+                htmlFor="signature-hook-toggle"
+                aria-label="Lead with Signature Hook"
+                className="flex items-center justify-between cursor-pointer group"
+              >
                 <div className="space-y-0.5">
                   <div className="flex items-center gap-1.5">
                     <span className="text-xs font-semibold text-slate-200 group-hover:text-white transition-colors">
@@ -321,6 +326,7 @@ export default function CharlieIpsumApp() {
                   </p>
                 </div>
                 <input
+                  id="signature-hook-toggle"
                   type="checkbox"
                   checked={startWithCatchphrase}
                   onChange={(e) => setStartWithCatchphrase(e.target.checked)}
