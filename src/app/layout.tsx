@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kirk Ipsum | The Conservative Lorem Ipsum Generator",
+  title: "Charlie Ipsum | The Conservative Lorem Ipsum Generator",
   description:
     "Generate bold, debate-ready placeholder text steeped in free enterprise and constitutional principles.",
 };
