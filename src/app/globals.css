@@ -71,32 +71,32 @@ body {
 :root {
   --scroll-width: 10px;
   --scroll-track: #181c24;
-  --scroll-thumb: linear-gradient(180deg, #dc2626 0%, #ffffff 50%, #2563eb 100%);
+  --scroll-thumb: linear-gradient(180deg, #ef4444 0%, #ffffff 50%, #2563eb 100%);
   --scroll-radius: 6px;
 }
 
-html {
-  scrollbar-color: #dc2626 var(--scroll-track);
-}
-
+*::-webkit-scrollbar,
 ::-webkit-scrollbar {
   width: var(--scroll-width);
   height: var(--scroll-width);
 }
 
+*::-webkit-scrollbar-track,
 ::-webkit-scrollbar-track {
   background: var(--scroll-track);
   border-left: 1px solid #333333;
 }
 
+*::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb {
   background: var(--scroll-thumb);
   border-radius: var(--scroll-radius);
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
+*::-webkit-scrollbar-thumb:hover,
 ::-webkit-scrollbar-thumb:hover {
-  filter: brightness(1.15);
+  filter: brightness(1.2);
 }
 
 /* Subtle Patriotic Aura & Shimmer */
